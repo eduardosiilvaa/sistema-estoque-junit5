@@ -5,6 +5,9 @@ public class App {
         SistemaEstoque sistemaEstoque = new SistemaEstoque();
 
         sistemaEstoque.adicionarProduto("Iphone 16e", 5);
-        System.out.println(sistemaEstoque.obterHistoricoTransacoes());
+        for (String transacao : sistemaEstoque.obterHistoricoTransacoes()) {
+            System.out.println(transacao);
+        }
+        
     }
 }
